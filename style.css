@@ -1,0 +1,127 @@
+/* Reset default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-image: url('./back.gif'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+/* Chat area */
+.chat-box {
+  height: 400px;
+  overflow-y: scroll;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.message strong {
+  font-weight: bold;
+}
+
+/* Input area */
+.input-area {
+  display: flex;
+  margin-top: 10px;
+}
+
+.input-area input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px 0 0 5px;
+}
+
+.input-area button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background-color: #0056b3;
+}
+
+/* User list */
+.user-list {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  overflow-y: scroll;
+  max-height: 200px;
+  border-radius: 5px;
+}
+
+.user-list h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.user {
+  margin-bottom: 5px;
+}
+
+/* User status */
+.user-online {
+  color: #2ecc71;
+}
+
+.user-offline {
+  color: #e74c3c;
+}
+
+/* Media queries for mobile */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  .user-list,
+  .chat-box {
+    max-height: 300px;
+  }
+}

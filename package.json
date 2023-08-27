@@ -1,0 +1,9 @@
+{
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "socket.io": "^4.7.2"
+  }
+}
